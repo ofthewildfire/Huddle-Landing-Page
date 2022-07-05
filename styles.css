@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Body Styling */
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+    /* Note to me for when I review this very challenge, just because  you just spent 10min trying to do this with hacky margin-tinkering before you remembered the property: using text-align is the way, dont let the name fool you, it works on ALL the elements in the body tag. okay? now say it 10 times ;) carry on now...  */
+}
+
+#logo {
+    width: 140px;
+    margin: 35px 5px 50px -165px;
+
+    /*this feels wrong but i do not know another way to do it */
+}
+
+
+#mockup img {
+    max-width: 80%;
+}
+
+/* text styles */
+
+#tagline {
+    font-size: 25px;
+    color: white;
+    font-family: 'Poppins-Regular';
+    font-weight: 600;
+    margin-top: 70px;
+    padding: 0px 30px;
+}
+
+.blurb {
+    margin-top: 15px;
+    color: white;
+    font-family: 'Poppins-Light';
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0px 30px;
+}
+
+/* Button */
+
+.btn {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    color: hsl(228, 45%, 44%);
+    font-weight: 400;
+    font-family: 'Open Sans';
+    box-shadow: 0 2px 3px -1px black;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-box img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+/* Desktop changes */
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    #logo {
+        position: relative;
+        left: 65px;
+        top: 10px;
+        margin: 10px 0px 0px;
+    }
+
+    #mockup {
+        justify-content: center;
+        width: 100%;
+        margin: 110px -50px 0px -80px;
+        /* border: 2px solid mistyrose; */
+    }
+
+    .flex-2 {
+        width: 800px;
+        height: 300px;
+        /* border: 2px solid mistyrose; */
+        position: relative;
+        top: 120px;
+        left: 70px;
+    }
+
+    .blurb {
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 150px;
+        padding: 0px 5px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+
+    .icon-box {
+        height: 100vh;
+        width: 50vh;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-right: 15px;
+    }
+}
+
+
+/* Hover states */
+
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
