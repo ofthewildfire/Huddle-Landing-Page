@@ -69,6 +69,6 @@ cleaner/neater coding habits; i feel as if mine is all a mess and it needs work;
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ofthewildfire)
-- Twitter - [@yourusername](https://www.twitter.com/kaywalking)
+- Frontend Mentor - [@ofthewildfire](https://www.frontendmentor.io/profile/ofthewildfire)
+- Twitter - [@kaywalking](https://www.twitter.com/kaywalking)
 
